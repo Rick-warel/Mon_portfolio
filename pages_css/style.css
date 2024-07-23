@@ -1,0 +1,945 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* a{
+    text-decoration: none;
+} */
+                /* Nav barre */
+
+.header-cont_nav{
+    display: flex;
+    align-items: center;
+    gap: 250px;
+    padding-left: 200px;
+    margin-top: 30px;
+    padding-bottom: 10px;
+}
+
+.image_logo{
+    width: 130px;
+}
+
+.header-cont_nav-cont_button{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav_cont_button_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(31, 28, 28);
+}
+
+.menu_burger{
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    display: none;
+}
+
+@media (max-width : 1500px) {
+    .header-cont_nav {
+        width: 100%;
+    }
+
+    .header-cont_nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .header-cont_nav-logo{
+        margin-left: 50px;
+    }
+
+    .header-cont_nav-cont_button{
+       gap: 30px;
+       margin-left: -100px;
+
+    }
+}
+
+
+
+
+@media (max-width : 900px){
+
+    header{
+        padding: 0;
+    }
+
+    .header-cont_nav{
+        margin: 0;
+        padding-right: 0;
+    }
+
+    .header-cont_nav-cont_button{
+        position: absolute;
+        flex-direction: column;
+        background-color: #f9b03352;
+        width: 100%;
+        height: 70vh;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        backdrop-filter: blur(15px);
+        margin-left: -120%;
+        transition: all 0.5S ease;
+        
+    }
+
+
+    .header-cont_nav-cont_button.mobile-menu{
+        margin-left: 0;
+    }
+
+    .menu_burger{
+        display: block;
+        z-index: 5;
+        
+
+    }
+
+    .image_logo{
+        width: 80px;
+        margin-top: 20px;
+        
+    }
+}
+
+
+         /* main */
+
+
+         /* AFFICHAGE PC */
+
+@media (min-width : 1500px) {
+    .sect1{
+        width: 100%;
+    }
+
+
+}
+
+.banner_main{
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    height: 500px;
+    width: 100%;
+    background-image: url(/images/fond\ dégradé.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner_main_texte{
+    width: 1000px;
+    margin-left: 100px;
+}
+
+h1{
+    /* font-family: "Bangers", system-ui; */
+    font-weight: 550;
+    font-size: 50px;
+    color: #0085BC;
+    margin-top: 100px;
+    margin-bottom: 30px;
+        
+}
+
+.objectif{
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.394); */
+}
+
+.liste_service{
+    font-weight: 500;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.394); */
+    font-style: italic;
+    margin-bottom: 50px;
+}
+
+.bouton_de_contact{
+    width: 250px;
+}
+
+.banner_main button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    color: #ffffff;
+    height: 70px;
+    border: none;
+    width: 250px;
+    border-radius: 50px;
+    /* border: 3px solid #ffffff; */
+    background-color: #0085BC;
+    font-size: 1.5em;
+    z-index: 2;
+    font-weight: 600;
+    transition: 0.3s;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner_main button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    content: "";
+    position: absolute;
+
+    height: 70px;
+    width: 280px;
+    border-radius: 50px;
+    background-color: #F9B233;
+    font-size: 1.5em;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+.banner_main button:hover::before{
+    transform: translate(0%);
+    
+}
+
+.banner_main button:hover{
+   color: #ffffff;
+}
+
+
+.banner_main button i {
+    display: none;
+}
+
+.banner_main button:hover i {
+    display: inline;
+}
+
+.logo_flou{
+    opacity: 50%;
+}
+
+@media (max-width : 1450px) {
+    .banner_main_texte{
+        width: auto;
+        margin-left: 20px;
+    }
+
+    h1{
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    .objectif, .liste_service{
+        font-size: 20px;
+    }
+
+
+}
+
+@media (max-width : 800px) {
+
+
+    .banner_main_texte{
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    h1{
+        margin-top: 100px;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .objectif, .liste_service{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .logo_flou{
+        display: none;
+    }
+
+    .bouton_de_contact{
+        margin: auto;
+    }
+
+
+}
+
+
+h3{
+    font-size: 25px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 500;
+}
+
+.separateur_titre{
+    width: 130px;
+    height: 10px;
+    margin: 0 auto;
+    background-color: #F9B233;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.cont_realisation{
+    display: flex;
+    align-items: center;
+    width: 100%
+}
+
+.lien_realisation_grande{
+    width: 50%;
+}
+
+.realisation_grande{
+    width: 100%;
+    height: 90vh;
+    background-image: url(/images/social\ media\ natureclat.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.realisation_petite{
+    width: 100%;
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.deux_petites_realisation{
+    width: 100%;
+    height: 50%;
+    background-color: #F9B233;
+    display: flex;
+    align-items: center;
+
+}
+
+.longue_petites_realisation{
+    width: 100%;
+    height: 50%;
+    background-color: #F9B233;
+}
+
+.lien_deux_petites_realisation{
+    width: 100%;
+    height: 100%;
+}
+
+.petite_realisation{
+    height: 100%;
+    width: 100%;
+    background-image: url(/images/quasar.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#deuxieme_petite{
+    background-image: url(/images/gilet_sefic.jpg);
+}
+
+#petite_realisation_horizontale{
+    background-image: url(/images/enseigne\ Le\ phare\ cotier.jpg);
+}
+
+@media (max-width: 1110px) {
+
+    /* .cont_realisation{
+        height: 300px;
+    }  */
+
+    .realisation_grande{
+        height: 60vh;
+    }
+
+    .realisation_petite{
+        height: 60vh;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* .cont_realisation{
+        height: 300px;
+    }  */
+
+    .realisation_grande{
+        height: 30vh;
+    }
+
+    .realisation_petite{
+        height: 30vh;
+    }
+}
+
+/* Titre voir plus */
+
+.lien_voir_plus{
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+}
+
+.conteneur_voir_plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #00000015;
+    padding: 20px 0;
+    border-radius: 50px;
+}
+
+.icone_voir_plus{
+    width: 30px;
+    height: 20px;
+}
+
+.texte_voir_plus{
+    color: #00000062;
+    font-size: 15px;
+}
+
+.grand_separateur{
+
+    height: 2px;
+    width: 50%;
+    background-color: #00000015;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+        /* services */
+
+
+
+
+
+.cont_service_detail{
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 150px;
+}
+
+.detail_service_bouton{
+    max-width: 600px;
+}
+
+
+.first-image_service{
+    width: 700px;
+    height: 486px;
+
+}
+
+.image_service{
+    width: 700px;
+    height: 486px;
+}
+
+.image_service2{
+    width: 700px;
+    height: 486px;
+    display: none;
+}
+
+#second_service{
+    justify-content: flex-end;
+    margin-left: 0;
+    margin-right: 150px;
+}
+
+.nom_service{
+    font-size: 40px;
+    font-weight: 600;
+    color: #0085BC;
+    margin-bottom: 20px;
+}
+
+#second_nom_service{
+    color: #80c772;
+}
+
+.detail_service{
+   font-size: 20px;
+   color: #00000091;
+   margin-bottom: 20px;
+}
+
+.bouton_en_savoir{
+    margin: 0;
+}
+
+.texte_gras{
+    font-weight: 700;
+}
+
+
+
+.cont_service_detail button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    color: #ffffff;
+    height: 50px;
+    border: none;
+    width: 170px;
+    border-radius: 50px;
+    /* border: 3px solid #ffffff; */
+    background-color: #0085BC;
+    font-size: 15px;
+    z-index: 2;
+    font-weight: 600;
+    transition: 0.3s;
+    overflow: hidden;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+
+#bouton_feed1 button{
+    background-color: #e9423c;
+}
+
+#bouton_feed1 button::before{
+    background-color: #0085BC;
+}
+
+
+#bouton_feed button{
+    background-color: #80c772;
+}
+
+#bouton_feed button::before{
+    background-color: #0085BC;
+}
+
+.cont_service_detail button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 200px;
+    border-radius: 50px;
+    background-color: #FEBB09;
+    font-size: 15px;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+
+
+.cont_service_detail button:hover::before{
+    transform: translate(0%);
+}
+
+.cont_service_detail button:hover{
+    color: #ffffff;
+ }
+ 
+
+
+.cont_titre_separateur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.separateur_coupe{
+    height: 2px;
+    width: 30%;
+    background-color: #0000001e;
+}
+
+.titre_separateur{
+    color: #00000057;
+}
+
+@media (max-width: 500px) {
+    .separateur_coupe{
+        width: 15%;
+    }
+}
+
+
+.section_temoignage{
+    background-color: #00000015;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.texte_temoignage{
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.photo{
+    height: 70px;
+    width: 70px;
+    background-color: #F9B233;
+    border-radius: 40px;
+}
+
+.photo_nom_client{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nom_client{
+    font-weight: 700;
+}
+
+
+
+
+/* animation slider */
+.slider-1{
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    margin-top: 15px;
+}
+
+.slider-1 .slider{
+    display: flex;
+    animation: slider-1 12s infinite ease-in-out; 
+}
+
+.slider-1 .temoignage{
+    flex-shrink: 0;
+    width: 100%;
+}
+
+
+@keyframes slider-1 {
+    0%,
+    20% {
+      transform: translateX(0);
+    }
+    25%,
+    45% {
+      transform: translateX(-100%);
+    }
+    50%,
+    70% {
+      transform: translateX(-200%);
+    }
+    75%,
+    95% {
+      transform: translateX(-300%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  } 
+
+
+
+
+@media (max-width: 1210px) {
+    .slider-1{
+        max-width: 1000px;
+    }
+    
+}
+
+@media (max-width: 1010px) {
+    .slider-1{
+        max-width: 800px;
+    }
+    
+}
+
+@media (max-width: 830px) {
+    .slider-1{
+        max-width: 600px;
+    }
+    
+}
+
+@media (max-width: 630px) {
+    .slider-1{
+        max-width: 400px;
+    }
+    
+}
+
+@media (max-width: 430px) {
+    .slider-1{
+        max-width: 400px;
+    }
+    
+}
+
+
+/* responsive partie services */
+
+@media (max-width: 1600px) {
+    .cont_service_detail{
+        margin-left: 100px;
+    }
+
+    .detail_service_bouton{
+        max-width: 500px;
+    }
+
+    .image_service{
+        width: 600px;
+        height: 386px;
+    }
+
+    .first-image_service{
+        width: 600px;
+        height: 386px;
+    }
+    
+    #second_service{
+        margin-right: 100px;
+    }
+    
+    .nom_service{
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 1300px) {
+    .cont_service_detail{
+        margin-left: 30px;
+    }
+
+    .detail_service_bouton{
+        max-width: 400px;
+    }
+
+    .image_service{
+        width: 500px;
+        height: 350px;
+    }
+
+    .first-image_service{
+        width: 500px;
+        height: 350px;
+    }
+    
+    #second_service{
+        margin-right: 30px;
+    }
+    
+    .nom_service{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 1035px) {
+    .cont_service_detail{
+        display: flex;
+        gap: 50px;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .detail_service_bouton{
+        max-width: 400px;
+        margin-bottom: 50px;
+    }
+
+    .image_service{
+        width: 700px;
+        height: 550px;
+        display: none;
+        
+    }
+
+    .first-image_service{
+        width: 700px;
+        height: 550px;
+    }
+
+    .image_service2{
+        width: 700px;
+        height: 550px;
+        display: block;
+    }
+    
+    #second_service{
+        margin: 0;
+    }
+    
+    .nom_service{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 970px) {
+    .cont_service_detail{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail_service_bouton{
+        max-width: 500px;
+    }
+
+    .image_service{
+        width: 700px;
+        height: 550px;
+        display: none;
+        
+    }
+
+    .first-image_service{
+        width: 700px;
+        height: 550px;
+    }
+
+    .image_service2{
+        width: 700px;
+        height: 550px;
+        display: block;
+    }
+    
+
+    .nom_service{
+        font-size: 30px;
+    }
+}
+
+
+
+@media (max-width: 800px) {
+
+    .detail_service_bouton{
+        max-width: 500px;
+    }
+
+    .image_service{
+        width: 700px;
+        height: 550px;
+        display: none;
+        
+    }
+
+    .first-image_service{
+        width: 500px;
+        height: 400px;
+    }
+
+    .image_service2{
+        width: 500px;
+        height: 400px;
+
+    }
+    
+
+    .nom_service{
+        font-size: 30px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .detail_service_bouton{
+        max-width: 400px;
+    }
+
+
+    .first-image_service{
+        width: 400px;
+        height: 280px;
+    }
+
+    .image_service2{
+        width: 400px;
+        height: 280px;
+
+    }
+    
+
+    .nom_service{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .detail_service_bouton{
+        max-width: 300px;
+    }
+
+
+    .first-image_service{
+        width: 300px;
+        height: 190px;
+    }
+
+    .image_service2{
+        width: 300px;
+        height: 190px;
+
+    }
+    
+
+    .nom_service{
+        font-size: 25px;
+    }
+}
