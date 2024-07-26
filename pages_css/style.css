@@ -7,7 +7,7 @@
 }
 
 body{
-    background-color: rgb(248, 243, 243);
+    background-color: rgb(248, 248, 248);
 }
 /* a{
     text-decoration: none;
@@ -481,6 +481,254 @@ h3{
     margin-right: auto;
 }
 
+        /* a propos */
+
+.apropo{
+    margin-bottom: 50px;
+}
+
+.espaseur{
+    height: 100px;
+}
+
+.conteneur_info_apropo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 150px;
+    
+}
+
+.ma_photo{
+    height: 550px;
+    width: 550px;
+    border-radius: 320px;
+    box-shadow: 10px 5px 5px #0084bc10;
+}
+
+.hello{
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+
+.description_apropo{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.texte_apropo{
+    max-width: 1000px;
+}
+
+.span_apropo{
+    color: #F9B233;
+    font-weight: 600;
+}
+
+
+
+
+.bouton_apropo button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+    height: 50px;
+    border: none;
+    width: 170px;
+    border-radius: 60px;
+    /* border: 3px solid #ffffff; */
+    background-color: #0085BC;
+    font-size: 15px;
+    z-index: 2;
+    font-weight: 500;
+    transition: 0.3s;
+    overflow: hidden;
+
+}
+
+
+.bouton_apropo button::before {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    background-color: #FEBB09;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    transform: translate(-100%);
+    transition: 0.3s;
+    z-index: -1;
+}
+
+
+.bouton_apropo button:hover::before{
+    transform: translate(0%);
+   
+}
+
+
+@media(max-width : 1500px){
+        
+    .ma_photo{
+        height: 450px;
+        width: 450px;
+
+    }
+
+    .hello{
+        font-size: 55px;
+    }
+
+    .description_apropo{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .texte_apropo{
+        max-width: 700px;
+    }
+
+}
+
+
+@media(max-width : 1210px){
+        
+    .ma_photo{
+        height: 350px;
+        width: 350px;
+
+    }
+
+    .hello{
+        font-size: 50px;
+    }
+
+    .description_apropo{
+        font-size: 25px;
+        margin-bottom: 50px;
+    }
+
+    .texte_apropo{
+        max-width: 600px;
+    }
+
+}
+
+
+@media(max-width : 1000px){
+        
+    .ma_photo{
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .hello{
+        font-size: 45px;
+    }
+
+    .description_apropo{
+        font-size: 20px;
+        margin-bottom: 50px;
+    }
+
+    .texte_apropo{
+        max-width: 500px;
+    }
+
+}
+
+
+@media(max-width : 880px){
+        
+    .ma_photo{
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .hello{
+        font-size: 40px;
+    }
+
+    .description_apropo{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .texte_apropo{
+        max-width: 400px;
+    }
+
+    .conteneur_info_apropo{
+        gap: 40px;
+    }
+
+}
+
+
+
+@media(max-width : 600px){
+        
+    .ma_photo{
+        height: 250px;
+        width: 250px;
+        margin-bottom: 30px;
+
+    }
+
+    .hello{
+        font-size: 40px;
+    }
+
+    .description_apropo{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .texte_apropo{
+        max-width: 350px;
+    }
+
+    .conteneur_info_apropo{
+        gap: 20px;
+        flex-direction: column;
+    }
+
+}
+
+
+@media(max-width : 400px){
+        
+
+    .description_apropo{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+
+    .texte_apropo{
+        max-width: 300px;
+    }
+
+
+
+}
+
+
+
+
+
+
+
         /* services */
 
 
@@ -649,9 +897,9 @@ h3{
 
 
 .section_temoignage{
-    background-color: #00000015;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    background-color: #000000e5;
+    padding-top: 20px;
+    padding-bottom: 50px;
 
 }
 
@@ -659,8 +907,12 @@ h3{
     font-weight: 600;
     margin-top: 20px;
     margin-bottom: 20px;
+    color: #ffffff;
 }
 
+#h3_temoignage{
+    color: white;
+}
 
 .photo{
     height: 70px;
@@ -677,6 +929,7 @@ h3{
 
 .nom_client{
     font-weight: 700;
+    color: #ffffff;
 }
 
 
@@ -977,4 +1230,50 @@ h3{
     .nom_service{
         font-size: 25px;
     }
+}
+
+
+/* footer */
+
+.conteneur_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #000000fd;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.titre_prestation{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+.services_footer{
+    font-size: 17px ;
+    color: #ffffff8e;
+}
+
+.les_servives_footer{
+    margin-bottom: 10px;
+}
+
+.logo_footer{
+    width: 130px;
+    height: 110px;
+}
+
+.copyright{
+    background-color: #000000fd;
+
+}
+
+.texte_copyrith{
+    font-size: 15px ;
+    color: #ffffff8e;
+    margin-left: 50px;
 }
