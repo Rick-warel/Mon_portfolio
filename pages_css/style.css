@@ -26,7 +26,7 @@ body{
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
-    transition: background-image 0.4s ease-in-out ;
+    transition: 0.4s ease-in-out ;
 }
 
 .header-cont_nav.scrolled {
@@ -226,9 +226,17 @@ body{
     font-size: 20px;
     color: #0274a8;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.295);
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
+    transition: all 0.5S ease;
 }
+
+.grand_bouton:hover{
+    background-color: #f9b033;
+    color: #ffffff;
+
+}
+
 
 
 .cont_reseaux{
@@ -638,6 +646,7 @@ body{
     background-color: white;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
     cursor: pointer;
+    transition: all 0.5S ease;
 
 }
 
@@ -1226,6 +1235,7 @@ body{
 
 }
 
+/* ---------------------------------------------- */
 
 
 .appelle_action{
@@ -1311,29 +1321,6 @@ body{
 
     }
 }
-
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
-{}
 
 
 

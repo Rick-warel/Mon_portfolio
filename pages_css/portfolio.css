@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* a{
+    text-decoration: none;
+} */
+                /* Nav barre */
+
+
+
+.header-cont_nav{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    gap: 500px;
+    padding-left: 300px;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    transition: background-image 0.4s ease-in-out ;
+}
+
+.header-cont_nav.scrolled {
+    /* background-image: url(/images/flou.png);
+    background-size: cover; */
+    backdrop-filter: blur(5px);
+}
+
+.image_logo{
+    width: 80px;
+    height: 52px;
+}
+
+.header-cont_nav-cont_button{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.nav_cont_button_icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-button{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(31, 28, 28);
+}
+
+.menu_burger{
+    width: 50px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+    display: none;
+}
+
+
+
+@media (max-width : 1500px) {
+    .header-cont_nav {
+        width: 100%;
+    }
+
+    .header-cont_nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .header-cont_nav-logo{
+        margin-left: 50px;
+    }
+
+    .header-cont_nav-cont_button{
+       gap: 30px;
+       margin-left: -100px;
+
+    }
+}
+
+@media (max-width : 1170px) {
+    .header-cont_nav {
+        gap: 300px;
+    }
+
+    .header-cont_nav{
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .header-cont_nav-logo{
+        margin-left: 50px;
+    }
+
+    .header-cont_nav-cont_button{
+       gap: 30px;
+       margin-left: -100px;
+
+    }
+}
+
+
+
+
+
+@media (max-width : 920px){
+
+    header{
+        padding: 0;
+    }
+
+    .header-cont_nav{
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .header-cont_nav-cont_button{
+        position: absolute;
+        flex-direction: column;
+        background-color: #f9b03352;
+        width: 100%;
+        height: 70vh;
+        z-index: 4;
+        top: 0;
+        left: 0;
+        padding-top: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+        backdrop-filter: blur(15px);
+        margin-left: -120%;
+        transition: all 0.5S ease;
+        
+    }
+
+
+    .header-cont_nav-cont_button.mobile-menu{
+        margin-left: 0;
+    }
+
+    .menu_burger{
+        display: block;
+        z-index: 5;
+        width: 40px;
+
+    }
+
+    .image_logo{
+        width: 60px;
+        height: 39px;
+        margin-top: 20px;
+        
+    }
+}
+
+
+/* --------------------------------------- */
+
+
+/* section a-propo */
+
+
+.titre_portfolio{
+    font-family: "Monoton", sans-serif;
+    color: #0274a8;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 100px;
+    position: relative;
+    padding-top: 150px;
+}
+
+
+@media(max-width: 1060px){
+    .titre_portfolio{
+        font-size: 70px;
+    }
+
+}
+
+@media(max-width: 650px){
+    .titre_portfolio{
+        font-size: 70px;
+    }
+}
+
+
+@media(max-width: 550px){
+    .titre_portfolio{
+        font-size: 60px;
+    }
+}
+
+@media(max-width: 450px){
+
+    .titre_portfolio{
+        font-size: 50px;
+    }
+}
+
+@media(max-width: 380px){
+
+    .titre_portfolio{
+        font-size: 45px;
+    }
+}
+
+
+
+
+/* ------------------------------------------ */
+
+.cont_element_folio{
+    width: 100%;
+    padding-top: 30px;
+    background-color: rgb(255, 255, 255);
+    z-index: 11;
+    position: relative;
+
+}
+
+/* ********** portfolio 1-2 */
+
+.folio_1_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 70px;
+}
+
+.folio{
+    height: 470px;
+    padding: 10px;
+    width: 650px;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
+}
+
+.image_folio{
+    width: 100%;
+    height: 75%;
+    background-image: url(/images/image\ de\ presentation\ du\ phare\ cotier.jpg);
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40PX;
+}
+
+#image_pholio2{
+    background-image: url(/images/presentation\ de\ la\ marque.jpg);
+}
+
+
+#sefic{
+    background-image: url(/images/image\ de\ presentation\ de\ sefic.jpg);
+}
+
+#bambou_harmony{
+    background-image: url(/images/bambou.jpg);
+}
+
+.detail_bouton_folio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nom_folio{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.336);
+    margin-bottom: 10px;
+}
+
+
+.libelet_folio{
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.en_savoir_plus{
+    height: 40PX;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    color: rgba(0, 0, 0, 0.336);
+    background-color: white;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+    transition: all 0.5S ease;
+
+}
+
+.en_savoir_plus:hover{
+    color: rgb(255, 255, 255);
+    background-color: #0274a8;
+}
+
+.cont_bouton_projet{
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    margin-top: -30px;
+}
+
+
+
+@media(max-width: 1600px){
+    .folio_1_2{
+        gap: 50px;
+    }
+
+    .folio_1_2{
+        margin-bottom: 50px;
+    }
+
+    .folio{
+        height: 470px;
+        width: 600px;
+    }
+}
+
+
+@media(max-width: 1400px){
+    .folio_1_2{
+        gap: 25px;
+    }
+
+    .folio_1_2{
+        margin-bottom: 25px;
+    }
+
+    .folio{
+        height: 400px;
+        width: 550px;
+    }
+}
+
+@media(max-width: 1200px){
+    .folio_1_2{
+        gap: 25px;
+    }
+
+    .image_folio{
+        margin-bottom: 20px;
+    }
+
+    .folio{
+        height: 450px;
+        width: 470px;
+    }
+}
+
+@media(max-width: 1060px){
+    .folio_1_2{
+        gap: 50px;
+        flex-direction: column;
+    }
+
+
+    .folio{
+        height: 400px;
+        width: 600px;
+    }
+
+    .titre_portfolio{
+        font-size: 70px;
+    }
+
+
+}
+
+@media(max-width: 700px){
+
+}
+
+@media(max-width: 650px){
+
+    .folio{
+        height: 400px;
+        width: 500px;
+    }
+
+    .titre_portfolio{
+        font-size: 70px;
+    }
+
+}
+
+@media(max-width: 550px){
+
+    .folio{
+        height: 400px;
+        width: 400px;
+    }
+
+    .titre_portfolio{
+        font-size: 60px;
+    }
+
+}
+
+
+@media(max-width: 450px){
+
+    .folio{
+        height: 400px;
+        width: 300px;
+    }
+
+    .titre_portfolio{
+        font-size: 60px;
+    }
+
+    .nom_folio{
+        font-size: 15px;
+    }
+
+    .libelet_folio{
+        font-size: 15px;
+    }
+
+
+}
+
+@media(max-width: 450px){
+
+
+    .titre_portfolio{
+        font-size: 50px;
+    }
+
+
+}
+/* ---------------------------------------------- */
+
+
+.appelle_action{
+    height: 350px;
+    width: 90%;
+
+    background: linear-gradient(90deg, 
+    rgba(249,178,51,1) 0%,
+     rgba(235,89,18,1) 100%);
+
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.texte_appelle{
+    font-size: 30px;
+    font-style: italic;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.fond_logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    height: 100%;
+    border-radius: 50px;
+    background-image: url(/images/logo\ flou.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+    gap: 30px;
+}
+
+
+.en_savoir_plus{
+    height: 40PX;
+    width: 130px;
+    border-radius: 20px;
+    border: none;
+    color: rgba(0, 0, 0, 0.336);
+    background-color: white;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
+    cursor: pointer;
+    transition: all 0.5S ease;
+
+}
+
+.en_savoir_plus:hover{
+    background-color: #0274a8;
+    color: white;
+}
+
+#bouton_appelle{
+    width: 200px;
+    height: 50px;
+    border-radius: 25px;
+    color: #0274a8;
+    font-size: 20px;
+}
+
+#bouton_appelle:hover{
+    color: #ffffff;
+}
+
+@media(max-width: 800px){
+    .fond_logo{
+        padding-left: 0;
+        align-items: center;
+    }
+
+    .texte_appelle{
+        font-size: 30px;
+
+    }
+}
+
+@media(max-width: 620px){
+
+    .texte_appelle{
+        font-size: 25px;
+
+    }
+}
+
+@media(max-width: 500px){
+
+    .texte_appelle{
+        font-size: 20px;
+
+    }
+}
+
+@media(max-width: 400px){
+
+    .texte_appelle{
+        font-size: 17px;
+
+    }
+}
+
+
+
+/* footer */
+
+.conteneur_footer{
+    z-index: 10;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    background-color: #000000fd;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    width: 100%;
+}
+
+
+
+.titre_prestation{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+.services_footer{
+    font-size: 17px ;
+    color: #ffffff8e;
+}
+
+.les_servives_footer{
+    margin-bottom: 10px;
+}
+
+.logo_footer{
+    width: 130px;
+    height: 110px;
+}
+
+.copyright{
+    background-color: #000000fd;
+
+}
+
+.texte_copyrith{
+    font-size: 15px ;
+    color: #ffffff8e;
+    margin-left: 50px;
+} 
+
+
+@media(max-width: 1400px){
+    .conteneur_footer{
+        gap: 100px;
+    }
+}
+
+@media(max-width: 1400px){
+    .conteneur_footer{
+        gap: 70px;
+    }
+}
+
+@media(max-width: 1000px){
+    .conteneur_footer{
+        gap: 70px;
+    }
+
+    .logo_footer{
+        display: none;
+    }
+}
+
+@media(max-width: 800px){
+    .conteneur_footer{
+        gap: 50px;
+    }
+
+    .logo_footer{
+        display: none;
+    }
+
+    .titre_prestation{
+        font-size: 20px;
+        margin-bottom: 20px;
+
+    
+    }
+    
+    .services_footer{
+        font-size: 15px ;
+        color: #ffffff8e;
+    }
+}
+
+@media(max-width: 600px){
+    .conteneur_footer{
+        flex-direction: column;
+        gap: 50px;
+        justify-content:flex-start ;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+    }
+
+    .les_liens{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .texte_copyrith{
+        text-align: center;
+        margin-left: 0px;
+    } 
+
+
+}
