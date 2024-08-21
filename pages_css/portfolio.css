@@ -173,49 +173,131 @@
 /* section a-propo */
 
 
-.titre_portfolio{
-    font-family: "Monoton", sans-serif;
+
+.conteneur_titre{
+    width: max-content;
+    height: max-content;
+    margin: 100px auto;
+}
+
+
+.titre_flou{
+    font-size: 90px;
+    font-weight: 800;
+    opacity: 10%;
+    margin: 0;
     color: #0274a8;
-    font-size: 50px;
     text-align: center;
-    font-weight: 300;
-    font-size: 100px;
-    position: relative;
-    padding-top: 150px;
 }
 
+.cont_titre_soulignement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -75px;
+}
 
-@media(max-width: 1060px){
-    .titre_portfolio{
-        font-size: 70px;
+.titre_superpose{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.souligement{
+    height: 8px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #0274a8;
+}
+
+@media(max-width: 1400px){
+    
+    .titre_flou{
+        font-size: 80px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -70px;
     }
 
 }
 
-@media(max-width: 650px){
-    .titre_portfolio{
-        font-size: 70px;
+@media(max-width: 1000px){
+    
+    .titre_flou{
+        font-size: 75px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -65px;
+    }
+
+    .titre_superpose{
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width: 700px){
+    
+    .titre_flou{
+        font-size: 65px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -55px;
+    }
+
+    .titre_superpose{
+        font-size: 30px;
+    }
+
+    .souligement{
+        width: 120px;
+    }
+}
+
+@media(max-width: 500px){
+    
+    .titre_flou{
+        font-size: 55px;
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -48px;
+    }
+
+    .titre_superpose{
+        font-size: 25px;
+    }
+
+    .souligement{
+        width: 120px;
     }
 }
 
 
-@media(max-width: 550px){
-    .titre_portfolio{
-        font-size: 60px;
-    }
-}
-
-@media(max-width: 450px){
-
-    .titre_portfolio{
+@media(max-width: 400px){
+    
+    .titre_flou{
         font-size: 50px;
     }
-}
 
-@media(max-width: 380px){
+    .cont_titre_soulignement{
+        margin-top: -45px;
+    }
 
-    .titre_portfolio{
-        font-size: 45px;
+    .titre_superpose{
+        font-size: 25px;
+    }
+
+    .souligement{
+        width: 120px;
     }
 }
 

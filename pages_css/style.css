@@ -232,7 +232,7 @@ body{
 }
 
 .grand_bouton:hover{
-    background-color: #f9b033;
+    background-color: #0273a8;
     color: #ffffff;
 
 }
@@ -484,32 +484,14 @@ body{
 
 
 .section_contenue{
-    height: 3500px;
+    height: max-content;
     background-color: white;
     z-index: 20;
     position: absolute;
     margin-top: 800px;
     border-radius: 100px;
     width: 100%;
-    padding-top: 60px;
-}
-
-@media(max-width: 1400px){
-    .section_contenue{
-        height: 3400px;
-    }
-}
-
-@media(max-width: 1060px){
-    .section_contenue{
-        height: 4200px;
-    }
-}
-
-@media(max-width: 800px){
-    .section_contenue{
-        height: 5500px;
-    }
+    padding-top: 50px;
 }
 
 
@@ -540,6 +522,137 @@ body{
     }
 }
 
+/* ------------------------------- */
+
+
+.conteneur_titre{
+    width: max-content;
+    height: max-content;
+    margin: 0 auto;
+
+}
+
+
+.titre_flou{
+    font-size: 90px;
+    font-weight: 800;
+    opacity: 10%;
+    margin: 0;
+    color: #0274a8;
+    text-align: center;
+}
+
+.cont_titre_soulignement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -75px;
+}
+
+.titre_superpose{
+    font-size: 40px;
+    text-align: center;
+    font-weight: 500;
+    margin: 0;
+}
+
+.souligement{
+    height: 8px;
+    width: 150px;
+    margin-top: 30px;
+    border-radius: 5px;
+    background-color: #0274a8;
+}
+
+@media(max-width: 1400px){
+    
+    .titre_flou{
+        font-size: 80px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -70px;
+    }
+
+}
+
+@media(max-width: 1000px){
+    
+    .titre_flou{
+        font-size: 75px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -65px;
+    }
+
+    .titre_superpose{
+        font-size: 35px;
+    }
+
+}
+
+@media(max-width: 700px){
+    
+    .titre_flou{
+        font-size: 65px;
+
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -55px;
+    }
+
+    .titre_superpose{
+        font-size: 30px;
+    }
+
+    .souligement{
+        width: 120px;
+    }
+}
+
+@media(max-width: 500px){
+    
+    .titre_flou{
+        font-size: 55px;
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -48px;
+    }
+
+    .titre_superpose{
+        font-size: 25px;
+    }
+
+    .souligement{
+        width: 120px;
+    }
+}
+
+
+@media(max-width: 400px){
+    
+    .titre_flou{
+        font-size: 50px;
+    }
+
+    .cont_titre_soulignement{
+        margin-top: -45px;
+    }
+
+    .titre_superpose{
+        font-size: 25px;
+    }
+
+    .souligement{
+        width: 120px;
+    }
+}
+
 
 /* section portfolio */
 /* {} */
@@ -548,28 +661,20 @@ body{
     position: relative;
     width: 100%;
     height: max-content;
+    margin-bottom: 50px;
 }
 
-.titre_portfolio{
-    font-family: "Monoton", sans-serif;
-    color: #0274a8;
-    font-size: 50px;
-    text-align: center;
-    font-weight: 300;
-    font-size: 100px;
-}
 
-#titre_service{
-    margin-top: 50px;
-}
+
 
 .cont_element_folio{
     width: 100%;
     padding-top: 30px;
     background-color: rgb(255, 255, 255);
-    margin-top: -55px;
     z-index: 11;
     position: relative;
+    margin-bottom: 100px;
+    margin-top: 70px;
 
 }
 
@@ -659,7 +764,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    margin-top: -30px;
+    margin-top: -60px;
 }
 
 
@@ -696,6 +801,27 @@ body{
 }
 
 @media(max-width: 1200px){
+
+    
+    .second_titre{
+        text-align: center;
+        font-size: 40px;
+        margin-top: -80px;
+        margin-bottom: 30px;
+        font-weight: 500;
+    }
+    
+    .soulignement_titre{
+        height: 10px;
+        width: 200px;
+        background-color: #0273a8;
+        margin-left: auto;
+        margin-right: auto;
+        
+    }
+    
+
+
     .folio_1_2{
         gap: 25px;
     }
@@ -722,9 +848,6 @@ body{
         width: 600px;
     }
 
-    .titre_portfolio{
-        font-size: 70px;
-    }
 
     .cont_element_folio{
         margin-top: -30px;
@@ -800,8 +923,6 @@ body{
 .cont_service{
     width: max-content;
     padding-top: 100px;
-    background-color: rgb(255, 255, 255);
-    margin-top: -55px;
     z-index: 11;
     position: relative;
     display: flex;
@@ -810,6 +931,7 @@ body{
     gap: 60px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 70px;
 
 }
 
@@ -950,9 +1072,7 @@ body{
 /* section a-propo */
 
 .cont_apropos{
-    margin-top: -50px;
     padding-top: 70px;
-    background-color: #ffffff;
     position: relative;
 }
 
