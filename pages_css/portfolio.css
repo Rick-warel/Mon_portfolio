@@ -177,7 +177,8 @@
 .conteneur_titre{
     width: max-content;
     height: max-content;
-    margin: 100px auto;
+    margin: 0 auto;
+    padding-top: 100px;
 }
 
 
@@ -304,7 +305,18 @@
 
 
 
-/* ------------------------------------------ */
+/* section portfolio */
+/* {} */
+
+.section_portfolio{
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 50px;
+}
+
+
+
 
 .cont_element_folio{
     width: 100%;
@@ -312,6 +324,8 @@
     background-color: rgb(255, 255, 255);
     z-index: 11;
     position: relative;
+    margin-bottom: 100px;
+    margin-top: 70px;
 
 }
 
@@ -366,18 +380,22 @@
 }
 
 .nom_folio{
-    font-size: 20px;
+    font-size: 17px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.336);
     margin-bottom: 10px;
 }
 
+.sep_lephare{
+    display: none;
+}
 
 .libelet_folio{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.336);
 }
+
 
 .en_savoir_plus{
     height: 40PX;
@@ -401,7 +419,7 @@
     margin-left: auto;
     margin-right: auto;
     width: max-content;
-    margin-top: -30px;
+    margin-top: -60px;
 }
 
 
@@ -435,9 +453,16 @@
         height: 400px;
         width: 550px;
     }
+
+    .cont_bouton_projet{
+        margin-top: 10px;
+    }
 }
 
 @media(max-width: 1200px){
+
+    
+
     .folio_1_2{
         gap: 25px;
     }
@@ -460,53 +485,50 @@
 
 
     .folio{
-        height: 400px;
-        width: 600px;
-    }
-
-    .titre_portfolio{
-        font-size: 70px;
+        height: 350px;
+        width: 500px;
     }
 
 
+    .cont_element_folio{
+        margin-top: -30px;
+    }
 }
 
 @media(max-width: 700px){
 
 }
 
-@media(max-width: 650px){
+
+@media(max-width: 600px){
 
     .folio{
-        height: 400px;
-        width: 500px;
-    }
-
-    .titre_portfolio{
-        font-size: 70px;
-    }
-
-}
-
-@media(max-width: 550px){
-
-    .folio{
-        height: 400px;
-        width: 400px;
+        height: 280px;
+        width: 450px;
     }
 
     .titre_portfolio{
         font-size: 60px;
     }
 
+    .image_folio{
+        width: 100%;
+        height: 70%;
+
+    }
+
+    .libelet_folio{
+        display: none;
+    }
+
 }
 
 
-@media(max-width: 450px){
+@media(max-width: 530px){
 
     .folio{
-        height: 400px;
-        width: 300px;
+        height: 280px;
+        width: 350px;
     }
 
     .titre_portfolio{
@@ -521,6 +543,11 @@
         font-size: 15px;
     }
 
+    #bouton_projet{
+        width: 200px;
+        font-size: 17px;
+    }
+
 
 }
 
@@ -531,6 +558,17 @@
         font-size: 50px;
     }
 
+        
+    .folio{
+        height: 300px;
+        padding: 10px;
+        width: 300px;
+     }
+
+    
+     .sep_lephare{
+        display: block;
+    }
 
 }
 /* ---------------------------------------------- */
