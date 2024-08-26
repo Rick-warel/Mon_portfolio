@@ -468,6 +468,7 @@
     display: flex;
     width: 100%;
     gap: 1%;
+    margin-bottom: 1%;
 }
 
 .cont_jare{
@@ -522,6 +523,20 @@
 
 #phone_insta{
     width: 35%;
+    height: auto;
+}
+
+.cont_visuel{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    gap: 1%;
+    margin-top: 1%;
+    justify-content: center;
+}
+
+.chaque_visuel{
+    width: 48%;
     height: auto;
 }
 
