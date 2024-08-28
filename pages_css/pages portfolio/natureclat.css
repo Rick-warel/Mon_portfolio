@@ -538,6 +538,10 @@
 .chaque_visuel{
     width: 48%;
     height: auto;
+    border-radius: 30px;
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
+    border-radius: 30px;
 }
 
 /* ---------------------------------------------- */
