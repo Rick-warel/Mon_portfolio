@@ -1084,6 +1084,7 @@ body{
 .cont_chaq_service{
     display: flex;
     gap: 20px;
+    align-items: center;
 }
 
 
