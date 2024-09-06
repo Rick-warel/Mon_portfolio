@@ -544,6 +544,34 @@
     border-radius: 30px;
 }
 
+@media(max-width: 500px){
+    .cont_visuel{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chaque_visuel{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .cont_social_media{
+        flex-direction: column;
+    }
+
+    .page_facebook{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #phone_insta{
+        width: 70%;
+    }
+}   
+
+
+
+
 /* ---------------------------------------------- */
 
 

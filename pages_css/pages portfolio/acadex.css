@@ -323,6 +323,19 @@
     width: 32%;
     height: auto;
 }
+
+@media(max-width: 500px){
+    .cont_element_boutique{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .img_element_boutique{
+        width: 95%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+}
 /* -------------------------------- */
 
 
@@ -506,6 +519,18 @@
     box-shadow: 1px 1px 7px 
     rgba(0, 0, 0, 0.171);
     border-radius: 30px;
+}
+
+@media(max-width: 500px){
+    .cont_visuel{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chaque_visuel{
+        width: 95%;
+        margin-bottom: 20px;
+    }
 }
 
 /* ---------------------------------------------- */

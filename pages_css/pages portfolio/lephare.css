@@ -699,6 +699,32 @@
     border-radius: 30px;
 }
 
+@media(max-width: 500px){
+    .cont_social_flyer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flyer_lephare{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    .cont_social_media{
+        flex-direction: column;
+    }
+
+    .page_facebook{
+        width: 95%;
+        margin-bottom: 20px;
+    }
+
+    #phone_insta{
+        width: 70%;
+    }
+}   
+
+
 /* ---------------------------------------------- */
 
 
