@@ -174,7 +174,7 @@
 .cont_banniere{
     width: 100%;
     height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 4%;
 
 }
 
@@ -191,8 +191,6 @@
 @media(max-width: 900px){
     .cont_banniere{
         padding-top: 100px;
-        margin-bottom: 100px;
-    
     }
 }
 /* -------------------------------------------- */
@@ -208,6 +206,7 @@
     text-align: center;
     font-size: 20px;
     color: rgba(0, 0, 0, 0.452);
+    margin-bottom: 5%;
 }
 
 @media(max-width: 800px){
@@ -220,7 +219,7 @@
     }
 
     .cont_banniere{
-        margin-bottom: 50px;
+        
     }
 }
 
@@ -244,11 +243,11 @@
 
 @media(max-width: 450px){
     .type_projet{
-        font-size: 17px;
+        font-size: 15px;
     }
     
     .detail_projet{
-        font-size: 15px;
+        font-size: 12px;
         width: 300px;
         margin-left: auto;
         margin-right: auto;
@@ -259,152 +258,73 @@
     }
 }
 /* ------------------------------------------- */
-                /* element du projet */
+                /* les differents logos */
 
-                /* COULEURS */
-.cont_elements_projet{
-    width: 97%;
-    margin: 0 auto;
-    height: max-content;
-    margin-top: 20px;
-}
-
-.libelet{
-    text-align: center;
-    font-size: 25PX;
-    margin-bottom: 50px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.452);
-}
-
-
-.section_couleur{
+.cont_logo_colorie{
     display: flex;
-    flex-direction: column;
+    width: 80%;
+    height: auto;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin: 0px auto ;
+    gap: 2%;
+    margin-bottom: 5%;
 }
 
-.cont_couleur{
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    gap: 20px;
-}
-
-.chaque_couleur{
-    height: 150px;
-    width: 300px;
-    background-color: #ed7e13;
-    border-radius: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.logo_colorie{
+    width: 25%;
+    height: auto;
     box-shadow: 1px 1px 7px 
     rgba(0, 0, 0, 0.171);
-}
-
-#couleur_2{
-    background-color: #ffffff;
-
-}
-
-#couleur_3{
-    background-color: #1b2646;
-}
-
-#code_couleur_3{
-    color: #ffffff;
-}
-
-@media(max-width: 1000px){
-    .chaque_couleur{
-        height: 150px;
-        width: 250px;
-    }
-}
-
-@media(max-width: 850px){
-    .chaque_couleur{
-        height: 150px;
-        width: 200px;
-        font-size: 12px;
-    }
-}
-
-
-@media(max-width: 670px){
-    .chaque_couleur{
-        height: 150px;
-        width: 150px;
-        font-size: 10px;
-    }
-
-    .cont_couleur{
-        gap: 10px;
-    }
-}
-
-@media(max-width: 500px){
-    .chaque_couleur{
-        height: 100px;
-        width: 100px;
-        font-size: 6px;
-        border-radius: 20px;
-    }
-
-    .cont_couleur{
-        gap: 10px;
-    }
-}
-
-
-/* ----------logo et motif-------- */
-
-.cont_image-resto{
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-resto{
-    width: 95%;
-    margin-bottom: 40px;
-}
-
-@media(max-width: 1500px){
-    .image-resto{
-        margin-bottom: 30px;
-    }
-}
-
-@media(max-width: 1200px){
-    .image-resto{
-        margin-bottom: 25px;
-    }
-}
-
-@media(max-width: 900px){
-    .image-resto{
-        margin-bottom: 20px;
-    }
-}
-
-
-@media(max-width: 600px){
-    .image-resto{
-        width: 95%;
-        margin-bottom: 10px;
-    }
+    border-radius: 10%;
 }
 
 
 /* -------------------------------- */
+
+.cont_image_corporate{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.corporate_natureclat{
+    width: 100%;
+    height: auto;
+}
+
+.cont_image_app_marque{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.app_marque{
+    width: 50%;
+    height: auto;
+}
+
+
+.cont_element_boutique{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    margin-bottom: 1%;
+}
+
+.img_element_boutique{
+    width: 33%;
+    height: auto;
+}
+/* -------------------------------- */
+
 
 
 .conteneur_titre{
@@ -539,8 +459,26 @@
 
 
 /* ------------------------------ */
+.image_des_cremes{
+    width: 100%;
+    height: auto;
+}
 
+.cont_des_jare{
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    margin-bottom: 1%;
+}
 
+.cont_jare{
+    width: 50%;
+}
+
+.jare{
+    width: 100%;
+    height: auto;
+}
 /* ----------packaging-------- */
 
 .packaging{
@@ -556,98 +494,6 @@
     margin: 0 auto;
 }
 
-.cont_img_packaging{
-    width: max-content;
-}
-
-.cont_box_burger{
-    width: max-content;
-}
-
-.cont_box_burger{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: max-content;
-}
-
-.packaging_produit{
-    height: auto;
-    width: 800px;
-    margin-left: 100px;
-}
-
-#image_box_burger{
-    margin-left: 0px;
-    margin-right: 80px;
-}
-
-
-@media(max-width: 1200px){
-    .packaging_produit{
-        width: 700px;
-        margin-left: 100px;
-    }
-}
-
-@media(max-width: 1000px){
-    .packaging_produit{
-        width: 600px;
-        margin-left: 100px;
-    }
-}
-
-@media(max-width: 800px){
-    .packaging_produit{
-        width: 500px;
-        margin-left: 50px;
-    }
-
-    #image_box_burger{
-        margin-right: 30px;
-    }
-}
-
-
-@media(max-width: 600px){
-    .packaging_produit{
-        width: 400px;
-        margin-left: 20px;
-    }
-
-    #image_box_burger{
-        margin-right: 10px;
-    }
-}
-
-@media(max-width: 500px){
-    .packaging_produit{
-        width: 350px;
-        margin-left: 20px;
-    }
-
-    #image_box_burger{
-        margin-right: 0;
-    }
-
-}
-
-@media(max-width: 400px){
-    .packaging_produit{
-        width: 300px;
-        margin-left: 0;
-    }
-
-    .packaging{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .cont_box_burger{
-        justify-content: center;
-    }
-}
 
 
 /* ----------social media-------- */
@@ -668,7 +514,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
 }
 
 .page_facebook{
@@ -681,17 +526,17 @@
     height: auto;
 }
 
-.cont_social_flyer{
+.cont_visuel{
     display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100%;
+    height: max-content;
     gap: 1%;
     margin-top: 1%;
+    justify-content: center;
 }
 
-.flyer_lephare{
-    width: 45%;
+.chaque_visuel{
+    width: 48%;
     height: auto;
     border-radius: 30px;
     box-shadow: 1px 1px 7px 
@@ -700,12 +545,12 @@
 }
 
 @media(max-width: 500px){
-    .cont_social_flyer{
+    .cont_visuel{
         flex-direction: column;
         align-items: center;
     }
 
-    .flyer_lephare{
+    .chaque_visuel{
         width: 95%;
         margin-bottom: 20px;
     }
@@ -723,6 +568,8 @@
         width: 70%;
     }
 }   
+
+
 
 
 /* ---------------------------------------------- */
