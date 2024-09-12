@@ -169,8 +169,161 @@
 
 /* --------------------------------------- */
 
+             /* banniere */
 
-/* section a-propo */
+.cont_banniere{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4%;
+
+}
+
+.image_banniere{
+    height: 100%;
+    width: 100%;
+}
+
+.banniere{
+    height: auto;
+    width: 100%;
+}
+
+@media(max-width: 900px){
+    .cont_banniere{
+        padding-top: 100px;
+    }
+}
+/* -------------------------------------------- */
+                /* détail projet */
+.type_projet{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.452);
+}
+
+.detail_projet{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.452);
+    margin-bottom: 5%;
+}
+
+@media(max-width: 800px){
+    .type_projet{
+        font-size: 20px;
+    }
+    
+    .detail_projet{
+        font-size: 15px;
+    }
+
+    .cont_banniere{
+        
+    }
+}
+
+
+@media(max-width: 600px){
+    .type_projet{
+        font-size: 18px;
+    }
+    
+    .detail_projet{
+        font-size: 15px;
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .separateur_texte{
+        display: none;
+    }
+}
+
+@media(max-width: 450px){
+    .type_projet{
+        font-size: 15px;
+    }
+    
+    .detail_projet{
+        font-size: 12px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .separateur_texte{
+        display: none;
+    }
+}
+/* ------------------------------------------- */
+                /* les differents logos */
+
+.cont_logo_colorie{
+    display: flex;
+    width: 80%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto ;
+    gap: 2%;
+    margin-bottom: 5%;
+}
+
+.logo_colorie{
+    width: 25%;
+    height: auto;
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
+    border-radius: 10%;
+}
+
+
+/* -------------------------------- */
+
+.cont_image_corporate{
+    height: max-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.corporate_natureclat{
+    width: 100%;
+    height: auto;
+}
+
+.cont_image_app_marque{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.app_marque{
+    width: 50%;
+    height: auto;
+}
+
+
+.cont_element_boutique{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1%;
+    margin-bottom: 1%;
+}
+
+.img_element_boutique{
+    width: 33%;
+    height: auto;
+}
+/* -------------------------------- */
 
 
 
@@ -178,7 +331,8 @@
     width: max-content;
     height: max-content;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 30px;
+    margin-bottom: 100px;
 }
 
 
@@ -304,281 +458,120 @@
 
 
 
-
-/* section portfolio */
-/* {} */
-
-.section_portfolio{
-    position: relative;
+/* ------------------------------ */
+.image_des_cremes{
     width: 100%;
+    height: auto;
+}
+
+.cont_des_jare{
+    display: flex;
+    width: 100%;
+    gap: 1%;
+    margin-bottom: 1%;
+}
+
+.cont_jare{
+    width: 50%;
+}
+
+.jare{
+    width: 100%;
+    height: auto;
+}
+/* ----------packaging-------- */
+
+.packaging{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
     height: max-content;
-    margin-bottom: 50px;
+    border-radius: 30px;
+    padding: 50px 0;
+    margin: 0 auto;
 }
 
 
 
+/* ----------social media-------- */
 
-.cont_element_folio{
-    width: 100%;
-    z-index: 11;
-    position: relative;
-    margin-bottom: 0px;
-    margin-top: 70px;
+.social_media{
+    width: 95%;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
+    border-radius: 30px;
+    padding: 50px 0;
+    margin: 0 auto;
 
+    margin-top: 50px;
 }
 
-#cont_suivant{
-    margin-top: 0;
-}
-
-/* .nouvelle_section{
-    background-color: #0274a8;
-} */
-
-/* ********** portfolio 1-2 */
-
-.folio_1_2{
+.cont_social_media{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 70px;
-    margin-bottom: 70px;
-}
-.folio{
-    height: 470px;
-    padding: 10px;
-    width: 650px;
-    border-radius: 30px;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
 }
 
-
-
-.image_folio{
-    width: 100%;
-    height: 75%;
-    border-radius: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    background-size: cover;
-    background-position: center;
-    margin-bottom: 40PX;
-    overflow: hidden;
+.page_facebook{
+    width: 50%;
+    height: auto;
 }
 
-
-.banniere_folio{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    transition: 0.4s ease;
+#phone_insta{
+    width: 35%;
+    height: auto;
 }
 
-.folio:hover img{
-    transform: scale(1.2);
-}
-
-
-
-.detail_bouton_folio{
+.cont_visuel{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
+    height: max-content;
+    gap: 1%;
+    margin-top: 1%;
+    justify-content: center;
 }
 
-.nom_folio{
-    font-size: 17px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.336);
-    margin-bottom: 10px;
+.chaque_visuel{
+    width: 48%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
+    border-radius: 30px;
 }
 
-.sep_lephare{
-    display: none;
-}
-
-.libelet_folio{
-    font-size: 15px;
-    font-weight: 500;
-    color: rgba(0, 0, 0, 0.336);
-}
-
-
-.en_savoir_plus{
-    height: 40PX;
-    width: 130px;
-    border-radius: 20px;
-    border: none;
-    color: rgba(0, 0, 0, 0.336);
-    background-color: white;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
-    cursor: pointer;
-    transition: all 0.5S ease;
-
-}
-
-.en_savoir_plus:hover{
-    color: rgb(255, 255, 255);
-    background-color: #0274a8;
-}
-
-.cont_bouton_projet{
-    margin-left: auto;
-    margin-right: auto;
-    width: max-content;
-    margin-top: -60px;
-}
-
-
-
-@media(max-width: 1600px){
-    .folio_1_2{
-        gap: 50px;
+@media(max-width: 500px){
+    .cont_visuel{
+        flex-direction: column;
+        align-items: center;
     }
 
-    .folio_1_2{
-        margin-bottom: 50px;
-    }
-
-    .folio{
-        height: 470px;
-        width: 600px;
-    }
-}
-
-
-@media(max-width: 1400px){
-    .folio_1_2{
-        gap: 25px;
-    }
-
-    .folio_1_2{
-        margin-bottom: 25px;
-    }
-
-    .folio{
-        height: 400px;
-        width: 550px;
-    }
-
-    .cont_bouton_projet{
-        margin-top: 10px;
-    }
-}
-
-@media(max-width: 1200px){
-
-    
-
-    .folio_1_2{
-        gap: 25px;
-    }
-
-    .image_folio{
+    .chaque_visuel{
+        width: 95%;
         margin-bottom: 20px;
     }
 
-    .folio{
-        height: 450px;
-        width: 470px;
-    }
-}
-
-@media(max-width: 1060px){
-    .folio_1_2{
-        gap: 50px;
+    .cont_social_media{
         flex-direction: column;
     }
 
-
-    .folio{
-        height: 350px;
-        width: 500px;
+    .page_facebook{
+        width: 95%;
+        margin-bottom: 20px;
     }
 
-
-    .cont_element_folio{
-        margin-top: -30px;
+    #phone_insta{
+        width: 70%;
     }
-}
-
-@media(max-width: 700px){
-
-}
+}   
 
 
-@media(max-width: 600px){
-
-    .folio{
-        height: 280px;
-        width: 450px;
-    }
-
-    .titre_portfolio{
-        font-size: 60px;
-    }
-
-    .image_folio{
-        width: 100%;
-        height: 70%;
-
-    }
-
-    .libelet_folio{
-        display: none;
-    }
-
-}
 
 
-@media(max-width: 530px){
-
-    .folio{
-        height: 280px;
-        width: 350px;
-    }
-
-    .titre_portfolio{
-        font-size: 60px;
-    }
-
-    .nom_folio{
-        font-size: 15px;
-    }
-
-    .libelet_folio{
-        font-size: 15px;
-    }
-
-    #bouton_projet{
-        width: 200px;
-        font-size: 17px;
-    }
-
-
-}
-
-@media(max-width: 450px){
-
-
-    .titre_portfolio{
-        font-size: 50px;
-    }
-
-        
-    .folio{
-        height: 300px;
-        padding: 10px;
-        width: 300px;
-     }
-
-    
-     .sep_lephare{
-        display: block;
-    }
-
-}
 /* ---------------------------------------------- */
 
 
@@ -626,7 +619,8 @@
     border: none;
     color: rgba(0, 0, 0, 0.336);
     background-color: white;
-    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.171);
+    box-shadow: 1px 1px 7px 
+    rgba(0, 0, 0, 0.171);
     cursor: pointer;
     transition: all 0.5S ease;
 
